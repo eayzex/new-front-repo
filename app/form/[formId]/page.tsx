@@ -20,7 +20,7 @@ export default function PublicFormPage() {
 
   const fetchFormById = async (formId: string) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/forms/${formId}`, {
+      const response = await fetch(`https://triddle-backend-hazel.vercel.app/api/forms/${formId}`, {
         method: "GET",
       })
       console.log("Response:", response)

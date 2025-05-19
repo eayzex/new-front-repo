@@ -59,7 +59,7 @@ export default function CreateFormPage() {
     // localStorage.setItem("triddle_forms", JSON.stringify([...existingForms, formData]))
 
     // Simulate API call to save form data
-    fetch("http://localhost:5000/api/forms", {
+    fetch("https://triddle-backend-hazel.vercel.app//api/forms", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

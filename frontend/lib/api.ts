@@ -1,6 +1,6 @@
 import { toast } from "@/components/ui/use-toast"
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api"
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://triddle-backend-hazel.vercel.app/api"
 
 // Helper function to handle API errors
 const handleApiError = (error: any) => {
@@ -40,9 +40,7 @@ const apiRequest = async (endpoint: string, options: RequestInit = {}) => {
     ...options.headers,
   }
 
-  if (token) {
-    headers["Authorization"] = `Bearer ${token}`
-  }
+ 
 
   const config: RequestInit = {
     ...options,

@@ -55,7 +55,7 @@ export default function DashboardPage() {
 
   const fetchFormsFromAPI = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/forms`, {
+      const response = await fetch(`https://triddle-backend-hazel.vercel.app/api/forms`, {
         method: "GET",
       })
       if (!response.ok) throw new Error("Failed to fetch forms")
